@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="">
+    <label for="firstname">First Name:</label>
+    <input id="firstname" type="text" name="firstName" id="firstname" placeholder="Jeff" required>
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" type="text" name="lastName" id="lastname" placeholder="Graham" required>
+
+    <br>
+    <label for="gender">Male</label>
+    <input id="gender" name="genderChoice" type="radio" value="male">
+    <label for="gender">Female</label>
+    <input id="gender" name="genderChoice" type="radio" value="female">
+    <label for="gender">Other</label>
+    <input id="gender" name="genderChoice" type="radio" value="other">
+
+    <br>
+    <label for="email">Email:</label>
+    <input id="email" name="emailAddress" type="email" placeholder="your email" required>
+    <label for="password">Email:</label>
+    <input id="password" name="pwd" type="password" placeholder="your password" minlength="5" maxlength="10">
+
+    <br>
+    <label for="birthday">Birthday:</label>
+    <select name="month" id="month">
+      <option>Month</option>
+      <option value="january">January</option>
+      <option value="february">February</option>
+      <option value="march">March</option>
+    </select>
+    <select name="day" id="day">
+      <option>Day</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <select name="year" id="year">
+      <option>Year</option>
+      <option value="1950">1950</option>
+      <option value="1951">1951</option>
+      <option value="1952">1952</option>
+    </select>
+
+    <br>
+    <label for="agreement">I agree to the terms and conditions</label>
+    <input type="checkbox" name="agreementChoice" id="agreement">
+
+    <br>
+    <button>Submit</button>
+  </form>
+</body>
+</html>
