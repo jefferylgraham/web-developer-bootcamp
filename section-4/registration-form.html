@@ -9,52 +9,59 @@
 <body>
   <h1>Register</h1>
   <form action="">
-    <label for="firstname">First Name:</label>
-    <input id="firstname" type="text" name="firstName" id="firstname" placeholder="Jeff" required>
-    <label for="lastname">Last Name:</label>
-    <input id="lastname" type="text" name="lastName" id="lastname" placeholder="Graham" required>
+    <div><label for="first">First Name:</label>
+      <input id="first" type="text" name="first" id="firstname" placeholder="Jeff" required>
+      <label for="last">Last Name:</label>
+      <input id="last" type="text" name="last" id="lastname" placeholder="Graham" required>
+    </div>
+    
+    <div>
+        <label for="male">Male</label>
+        <input id="Male" name="gender" type="radio" value="male">
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" value="female">
+        <label for="other">Other</label>
+        <input id="other" name="gender" type="radio" value="other">
+    </div>
 
-    <br>
-    <label for="gender">Male</label>
-    <input id="gender" name="genderChoice" type="radio" value="male">
-    <label for="gender">Female</label>
-    <input id="gender" name="genderChoice" type="radio" value="female">
-    <label for="gender">Other</label>
-    <input id="gender" name="genderChoice" type="radio" value="other">
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="your email" required>
+        <label for="password">Email:</label>
+        <input id="password" name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" placeholder="your password">
+    </div>
 
-    <br>
-    <label for="email">Email:</label>
-    <input id="email" name="emailAddress" type="email" placeholder="your email" required>
-    <label for="password">Email:</label>
-    <input id="password" name="pwd" type="password" placeholder="your password" minlength="5" maxlength="10">
+    <div>
+        <label>Birthday:
+          <select name="month">
+            <option>Month</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+          </select>
+          <select name="day">
+            <option>Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select name="year">
+            <option>Year</option>
+            <option value="1950">1950</option>
+            <option value="1951">1951</option>
+            <option value="1952">1952</option>
+          </select>
+        </label>
+    </div>
 
-    <br>
-    <label for="birthday">Birthday:</label>
-    <select name="month" id="month">
-      <option>Month</option>
-      <option value="january">January</option>
-      <option value="february">February</option>
-      <option value="march">March</option>
-    </select>
-    <select name="day" id="day">
-      <option>Day</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-    <select name="year" id="year">
-      <option>Year</option>
-      <option value="1950">1950</option>
-      <option value="1951">1951</option>
-      <option value="1952">1952</option>
-    </select>
+    <div>
+        <label for="agreement">I agree to the terms and conditions</label>
+        <input type="checkbox" name="agreement" id="agreement">
+    </div>
 
-    <br>
-    <label for="agreement">I agree to the terms and conditions</label>
-    <input type="checkbox" name="agreementChoice" id="agreement">
-
-    <br>
-    <button>Submit</button>
+    <div>
+        <button>Submit</button>
+    </div>
   </form>
 </body>
 </html>
