@@ -1,0 +1,63 @@
+body {
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+#one {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#two {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#three {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#four {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#five {
+    border: 1px solid black;
+}
+
+#six {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#seven {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#eight {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#nine {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
