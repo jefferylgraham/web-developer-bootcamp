@@ -11,6 +11,6 @@ body {
   background: #2c3e50;
 }
 
-.navbar-brand .navbar-inverse, .navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
   color: white;
 }
