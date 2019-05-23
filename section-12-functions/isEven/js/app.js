@@ -11,6 +11,7 @@ function factorial(num) {
   }
 }
 
-function kebabToSnake(word) {
-  return word.replace(/-/g, "_");
+function kebabToSnake(str) {
+  var newStr = str.replace(/-/g, "_");
+  return newStr;
 }
