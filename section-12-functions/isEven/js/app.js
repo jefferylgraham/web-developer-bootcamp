@@ -12,5 +12,5 @@ function factorial(num) {
 }
 
 function kebabToSnake(word) {
-  return word.replace("-", "_");
+  return word.replace(/-/g, "_");
 }
