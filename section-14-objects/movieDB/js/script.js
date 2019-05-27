@@ -17,10 +17,18 @@ var movies = [
 ];
 
 movies.forEach(function(movie) {
-  if(movie.hasWatched === true) {
-    console.log("You have seen \"" + movie.title + "\" - " + movie.rating + " stars.")
+  console.log(buildMovieString(movie));
+})
+
+function buildMovieString(movieObj) {
+  var result = "You have ";
+  if(movieObj.hasWatched) {
+    result += "watched ";
   }
   else {
-    console.log("You have not seen \"" + movie.title + "\" - " + movie.rating + " stars.")
+    result += "not seen ";
   }
-})
+  result += "\"" + movieObj.title + "\" - ";
+  result += movieObj.rating + " stars."
+  return result;
+}
