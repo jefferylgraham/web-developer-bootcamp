@@ -17,10 +17,15 @@ h1 {
   text-align: center;
   color: black;
 }
+
 .square {
   width: 30%;
   background: purple;
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+}
+
+.selected {
+  background: blue;
 }
