@@ -18,3 +18,7 @@ $("input[type='text']").on("keypress", function(event) {
     $(this).val("");
   }
 });
+
+$("#toggleForm").on("click", function() {
+  $("input[type='text']").fadeToggle();
+})
