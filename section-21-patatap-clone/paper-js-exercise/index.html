@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paper JS Exercise</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/paper-full.js"></script>
+  <!-- Define inlined PaperScript associate it with myCanvas -->
+  <script type="text/paperscript" canvas="myCanvas">
+    var circle = new Path.Circle({
+      center: [0, 0],
+      radius: 10,
+      fillColor: 'red'
+    });
+
+    for (var i = 0; i < 10; i++) {
+      for(var j = 0; j < 10; j++) {
+        var copy = circle.clone();
+        copy.position.x += i * 50;
+        copy.position.y += j * 50;
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>
